@@ -1,0 +1,47 @@
+h3{
+    font-size: 25px !important;
+    animation-name:header;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    width:200px;
+} 
+
+.btn-success:hover{
+    background-color: Red;
+    border-color: red;
+} 
+canvas{
+    animation-name:colors;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    border-radius: 60px;
+}
+
+@keyframes colors{
+    0%{
+        box-shadow: 1px 1px 38px red;
+        border: 6px solid purple;
+        background-color: lightblue;
+    }
+    50%{
+        box-shadow: 1px 1px 38px yellow;
+        border: 10px solid lightblue;
+        background-color: pink;
+    }
+    100%{
+        box-shadow: 1px 1px 38px red;
+        border: 6px solid purple;
+        background-color: lightblue;
+    }
+}
+
+@keyframes header{
+    from{
+        background-color: blue;
+        color:white;
+    }
+    to{
+        background-color:rgb(149, 52, 240);
+        color:black;
+    }
+}
